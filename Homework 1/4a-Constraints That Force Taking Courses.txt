@@ -1,0 +1,15 @@
+Constraints like prerequisites and co‑requisites are important because they make sure students have the right background before taking harder courses.
+
+They protect academic quality and help students follow the correct order of courses, such as Calculus I before Calculus II.​
+
+To support prerequisites, the system needs a PREREQUISITE table, for example: CourseID, PrerequisiteCourseID, MinimumGrade.​
+
+For co‑requisites, the system might need a COREQUISITE table that links two courses that must be taken in the same semester.
+
+For required repeat chains and failed courses, the system may need fields like IsRequired and IsCore in COURSE, and a grade field in REGISTRATION or a separate ENROLLMENT table.
+
+The system must store which course depends on which other course, and what minimum grade is accepted, so it can automatically block or allow registrations.
+
+These tables and fields are not needed in the simple system from Part 2, because that system has no rules about order, no prerequisite checks, and no repeat logic.
+
+The simple system only cares about creating students, courses, sections, and registrations, so it does not need to store constraint information.

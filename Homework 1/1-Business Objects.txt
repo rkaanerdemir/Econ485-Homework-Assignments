@@ -1,0 +1,47 @@
+ Significant Objects for the registration system:
+​
+
+Student
+Course
+Section
+Instructor
+Teaching Assistant
+Department
+Program
+Semester
+Course Code
+Course Title
+Credits (local credits, ECTS)
+Delivery Mode (in‑person, online, hybrid)
+Prerequisite
+Co‑requisite
+Mutually Exclusive Course
+Course Equivalence
+Registration
+Registration Eligibility
+Registration Priority
+Time Conflict
+Schedule (meeting days and times)
+Classroom / Online Link
+Maximum Enrollment Capacity
+Grade
+Failed Course
+Repeated Course
+Grade Replacement
+Course Replacement
+Add/Drop
+Withdrawal (W grade)
+Forced / Administrative Withdrawal (AW)
+Credit Load (minimum, standard, maximum)
+Overload Permission
+Academic Probation
+Student Status (active, suspended)
+Financial Restriction
+Disciplinary Suspension
+Override / Special Permission
+Registration History / Action Log
+Attendance Policy
+Academic Integrity Violation
+Graduation Requirement
+Core / Required Course
+Elective Course

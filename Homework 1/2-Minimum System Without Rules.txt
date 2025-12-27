@@ -1,0 +1,10 @@
+For the very simple system (no rules, no history), only these concepts are needed:
+
+Student
+Course
+Section
+Instructor
+Registration
+
+These are enough to create courses, offer sections, store students, and register students into sections.
+​

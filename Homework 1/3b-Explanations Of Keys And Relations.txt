@@ -1,0 +1,16 @@
+
+Explanations of keys and relations
+
+
+StudentID, CourseID, InstructorID, SectionID, and RegistrationID are chosen as primary keys because they are unique identifiers and do not change over time.​
+
+CourseID is used as a foreign key in SECTION so that each section is always linked to exactly one course.​
+
+InstructorID is a foreign key in SECTION so the system always knows who is teaching each section.​
+
+StudentID and SectionID are foreign keys in REGISTRATION to connect students and sections and to model the many‑to‑many relationship between them.​
+
+The many‑to‑many relation between STUDENT and SECTION is solved by the REGISTRATION table, which breaks it into two 1‑N relations.​
+
+All non‑key fields in each table depend on the whole primary key, not part of it, so there are no partial dependencies and the design satisfies 2NF.
+​

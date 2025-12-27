@@ -1,0 +1,10 @@
+
+Limiting rules are important because they prevent impossible or unfair schedules, like two classes at the same time or too many credits in one semester.​
+Time‑conflict rules help students avoid overlapping sections and make sure they can attend all meetings.
+Credit‑load rules (minimum, standard, maximum) protect students from taking too many or too few courses at once.
+Mutually exclusive courses stop students from earning credit twice for almost the same content.
+To enforce these rules, the system needs extra tables and fields, such as a SCHEDULE table (SectionID, DayOfWeek, StartTime, EndTime, Room).
+For maximum credits, the system needs to store credits per course and maybe MaxCredits and MinCredits per program or per student.
+For mutually exclusive courses, it may need a MUTUAL_EXCLUSION table with CourseID and ExcludedCourseID.
+Before allowing registration, the system must check the student’s existing sections, total credits, past failures, withdrawals, and mutually exclusive pairs.
+These checks and tables are not included in the basic system from Part 2, because that system ignores time conflicts, credit limits, and exclusion rules to stay simple.

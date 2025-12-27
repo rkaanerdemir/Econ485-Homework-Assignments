@@ -1,0 +1,46 @@
+Suggested tables and fields for the simple system:
+​
+
+STUDENT
+StudentID (PK)
+FirstName
+LastName
+Email
+
+COURSE
+CourseID (PK)
+CourseCode
+CourseTitle
+CreditsECTS
+
+INSTRUCTOR
+InstructorID (PK)
+FirstName
+LastName
+Email
+
+SECTION
+SectionID (PK)
+CourseID (FK → COURSE.CourseID)
+InstructorID (FK → INSTRUCTOR.InstructorID
+Semester
+Year
+SectionNumber
+
+REGISTRATION
+RegistrationID (PK)
+StudentID (FK → STUDENT.StudentID)
+SectionID (FK → SECTION.SectionID)
+
+Relationships:
+​One COURSE has many SECTIONs (1‑N).
+One INSTRUCTOR teaches many SECTIONs (1‑N).
+One STUDENT can register to many SECTIONs, and one SECTION can have many STUDENTs, so STUDENT and SECTION are N‑M through REGISTRATION.
+
+ER diagram (logical description):
+STUDENT (1) — (N) REGISTRATION (N) — (1) SECTION
+COURSE (1) — (N) SECTION
+INSTRUCTOR (1) — (N) SECTION
+
+The design has no repeating groups and no attribute depending on part of a composite key, so it is in 2NF.
+​

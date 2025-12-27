@@ -1,0 +1,15 @@
+A real registration system must keep a history of actions to support audits, student appeals, and transparency about who did what and when.
+​
+History helps resolve disputes, for example when a student claims they tried to register or drop a course but the system did not allow it.​
+
+To store history, the system needs an ACTION_LOG (or REGISTRATION_HISTORY) table with fields like ActionID, StudentID, SectionID, ActionType, Timestamp, PerformedBy, and Result.
+
+ActionType could include values such as AddAttempt, DropAttempt, WithdrawalRequest, ForcedWithdrawal, OverrideGranted, TimeConflictApproval.
+
+The system must record not only successful changes, but also failed attempts and approvals, as Appendix 1 describes.
+
+This requirement makes the system more complex because every operation must write both to the main tables and to the history table.
+
+Queries also become more complex when administrators want to see the full timeline of a student’s registration actions.
+
+In the simplified design of Part 3, history is not included because the goal is to focus on the main data (students, courses, sections, registrations) and keep the schema small and easy to understand.
